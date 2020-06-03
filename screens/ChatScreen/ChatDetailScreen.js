@@ -160,7 +160,7 @@ const ChatDetailScreen = props => {
             senderId: _id,
             recieverId: receiver_id,
             sentTime: new Date().toString(),
-            messageText: message.text
+            messageText: message[0].text
         }
         socket.emit("privateMessage", newMessage)
         newMessage.sender = true
