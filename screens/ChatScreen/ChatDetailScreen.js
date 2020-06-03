@@ -20,7 +20,7 @@ import dayjs from 'dayjs';
 import Colors from '../../constants/Colors';
 import * as actionTypes from '../../store/actions/UpdateMessage';
 
-const socket = io.connect("http://192.168.0.8:5000")
+const socket = io.connect("https://chat-app76.herokuapp.com")
 
 const ChatDetailScreen = props => {
 
