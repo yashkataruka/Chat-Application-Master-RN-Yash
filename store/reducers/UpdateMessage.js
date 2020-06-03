@@ -26,7 +26,7 @@ export default (state = initialState, action) => {
                     'Authorization': "Bearer " + action.user_id
                 }
             }
-            axios.post('http://192.168.0.8:5000/user/messages/chats', oldChats.chats, config)
+            axios.post('https://chat-app76.herokuapp.com/user/messages/chats', oldChats.chats, config)
             return {
                 ...state,
                 chats: oldChats
