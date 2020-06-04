@@ -17,7 +17,7 @@ export const fetchChats = (user_id) => {
             }
         }
         try {
-            axios.get('http://192.168.0.8:5000/user/messages/chats', config).then(response => {
+            axios.get('https://chat-app76.herokuapp.com/user/messages/chats', config).then(response => {
                 dispatch({
                     type: SET_CHATS,
                     chats: response.data
@@ -57,7 +57,7 @@ export const fetchFastMessages = (user_id) => {
             }
         }
         try {
-            axios.get('http://192.168.0.8:5000/user/messages', config).then(response => {
+            axios.get('https://chat-app76.herokuapp.com/user/messages', config).then(response => {
                 dispatch({
                     type: SET_FAST_MESSAGES,
                     fastMessages: response.data
@@ -88,7 +88,7 @@ export const fetchOnline = (user_id) => {
             }
         }
         try {
-            axios.get('http://192.168.0.8:5000/user/friends/online', config).then(response => {
+            axios.get('https://chat-app76.herokuapp.com/user/friends/online', config).then(response => {
                 dispatch({
                     type: SET_ONLINE,
                     online: response.data
@@ -111,7 +111,7 @@ export const fetchFriends = (user_id) => {
             }
         }
         try {
-            axios.get('http://192.168.0.8:5000/user/friends', config).then(response => {
+            axios.get('https://chat-app76.herokuapp.com/user/friends', config).then(response => {
                 dispatch({
                     type: SET_FRIENDS,
                     friends: response.data

@@ -13,7 +13,7 @@ import { FlatList } from 'react-native-gesture-handler';
 import * as actionTypes from '../../store/actions/UpdateMessage';
 import Colors from '../../constants/Colors';
 
-const socket = io.connect("http://192.168.0.8:5000")
+const socket = io.connect("https://chat-app76.herokuapp.com")
 
 const ChatsScreen = props => {
     
